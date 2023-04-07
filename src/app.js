@@ -11,7 +11,8 @@ app.use(cors());
 mongoose.connect('mongodb+srv://chenryjonathan2000:ciRspXS8dg5nTUX6@cluster0.cearjkd.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-}).then(()=>{console.log(`MongoDb Connected`);});
+})
+// .then(()=>{console.log(`MongoDb Connected`);});
 
 const Location = require('../models/location.model');
 const User = require('../models/user.model');
@@ -97,6 +98,6 @@ app.delete('/users/:id', async (req, res) => {
 //   });
   
   app.listen(4000, () => {
-    console.log('Server started on port 4000');
+    // console.log('Server started on port 4000');
   });
   
