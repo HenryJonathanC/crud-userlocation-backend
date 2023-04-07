@@ -4,7 +4,7 @@ const UserSchema = mongoose.Schema({
   name: String,
   age: Number,
   email: String,
-  contactNumber: String,
+  number: String,
   role:String,
   location: {
     type: mongoose.Schema.Types.ObjectId,
